@@ -1,7 +1,7 @@
 let dot = document.getElementById('dot');
 let length = 300; 
 //한 번에 이동할 거리
-let x=0, y=0;
+let x=window.innerWidth/2, y=window.innerHeight/2;
 let direction = 'right';
 //처음에는 오른쪽으로 이동
 
@@ -22,8 +22,8 @@ function moveDot() {
   }
 
   //점 위치 설정
-  dot.style.left = x+'px';
-  dot.style.top = y+'px';
+  dot.style.left = `${x-dot.offsetWidth/2 - length/2}px`;
+  dot.style.top = `${y-dot.offsetHeight/2 - length/2}px`;
 }
 
 //점을 반복적으로 이동
