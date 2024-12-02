@@ -1,5 +1,5 @@
 let dot = document.getElementById('dot');
-let length = 300; 
+let length = 500; 
 //한 번에 이동할 거리
 let x=window.innerWidth/2, y=window.innerHeight/2;
 let direction = 'right';
